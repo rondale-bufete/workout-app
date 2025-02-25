@@ -14,7 +14,7 @@ const WorkoutForm = () => {
     const [success, setSuccess] = useState('')
     const [emptyFields, setEmptyFields] = useState([])
 
-    const apiUrl = process.env.REACT_APP_API_URL || 'https://node-express-app-hu6k.onrender.com'
+    const apiUrl = process.env.REACT_APP_API_URL
 
     const handleSubmit = async (e) => {
         e.preventDefault()

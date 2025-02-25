@@ -8,7 +8,7 @@ const WorkoutDetails = ( {workout} ) => {
 
     const { dispatch } = useWorkoutsContext()
     const { user } = useAuthContext()
-    const apiUrl = process.env.REACT_APP_API_URL || 'https://node-express-app-hu6k.onrender.com';
+    const apiUrl = process.env.REACT_APP_API_URL;
 
     const handleClick = async () => {
         if(!user) { return }

@@ -5,7 +5,8 @@ export const useLogin = () => {
     const [error, setError] = useState(null)
     const [isLoading, setIsLoading] = useState(null)
     const { dispatch } = useAuthContext()
-    const apiUrl = process.env.REACT_APP_API_URL || 'https://node-express-app-hu6k.onrender.com'
+    
+    const apiUrl = process.env.REACT_APP_API_URL
 
     const login = async (email, password) => {
         setIsLoading(true)
