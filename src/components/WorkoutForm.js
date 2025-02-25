@@ -14,6 +14,8 @@ const WorkoutForm = () => {
     const [success, setSuccess] = useState('')
     const [emptyFields, setEmptyFields] = useState([])
 
+    const apiUrl = process.env.REACT_APP_API_UR
+
     const handleSubmit = async (e) => {
         e.preventDefault()
         if(!user) {
@@ -22,7 +24,7 @@ const WorkoutForm = () => {
         }
         const workout = {title, sets, reps}
          
-        const response = await fetch('/api/workouts', {
+        const response = await fetch(`${apiUrl}/api/workouts`, {
             method: 'POST',
             body: JSON.stringify(workout),
             headers: {
