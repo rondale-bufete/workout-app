@@ -97,8 +97,19 @@ form h2 {
 }
 .form-container form input, button {
   height: 45px;
+  margin-bottom: 5%;
   
 }
 .form-container form button {
     margin-top: 1%;
   }
+
+.signup .t-link, .login .t-link {
+  color: #f1f1f1;
+  text-decoration: none;
+  text-align: center;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 5px;
+  text-align: center;
+}
