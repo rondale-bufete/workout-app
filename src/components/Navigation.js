@@ -18,7 +18,7 @@ const Navigation = () => {
         <header>
             <div className="container">
                 <Link to="/">
-                    <h1>MY APP</h1>
+                    <h1>TEST APP</h1>
                 </Link>
                 <nav>
                     {!user && (
