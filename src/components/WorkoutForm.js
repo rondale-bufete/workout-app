@@ -22,7 +22,7 @@ const WorkoutForm = () => {
         }
         const workout = {title, sets, reps}
          
-        const response = await fetch('https://node-express-app-tb7g.onrender.com/api/workouts', {
+        const response = await fetch('/api/workouts', {
             method: 'POST',
             body: JSON.stringify(workout),
             headers: {

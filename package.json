@@ -1,4 +1,5 @@
 {
+  "proxy": "https://node-express-app-tb7g.onrender.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
