@@ -6,7 +6,7 @@ export const useSignup = () => {
     const [isLoading, setIsLoading] = useState(null)
     const { dispatch } = useAuthContext()
 
-    const apiUrl = process.env.REACT_APP_API_UR
+    const apiUrl = process.env.REACT_APP_API_URL || 'https://node-express-app-hu6k.onrender.com'
 
     const signup = async (name, email, password) => {
         setIsLoading(true)

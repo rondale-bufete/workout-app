@@ -11,7 +11,7 @@ const Home = () => {
     const {workouts, dispatch} = useWorkoutsContext()
     const { user } = useAuthContext()
 
-    const apiUrl = process.env.REACT_APP_API_UR
+    const apiUrl = process.env.REACT_APP_API_URL || 'https://node-express-app-hu6k.onrender.com'
 
     useEffect(() => {
         const fetchWorkouts = async() => {
