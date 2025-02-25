@@ -1,0 +1,129 @@
+header {
+    background-color: rgba(0, 0, 0, 0.737);
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+header h1 {
+ color: aliceblue;
+}
+header nav a {
+  color: #ddd;
+  margin-inline: 1.2rem;
+  font-weight: 700;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .logout {
+  background-color: transparent;
+  color: #f0f0f0;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  border-radius: 10px;
+  padding-inline: 15px;
+}
+.user-logged {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 1.2rem;
+  
+}
+.user-auth {
+  color: #ddd;
+}
+
+.home form {
+    background: rgba(0, 0, 0, 0.806);
+    border-radius: 16px;
+    backdrop-filter: blur(11.9px);
+    -webkit-backdrop-filter: blur(11.9px);
+    border: 1px solid rgba(0, 0, 0, 0.43);
+    position: fixed;
+    right: 0;
+    max-width: 330px;
+    width: 25%;
+    padding: 25px 25px;
+    margin-right: 2%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.824);
+    color:aliceblue;
+}
+
+/* new workout form */
+
+
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form h3 {
+  text-align: center;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: 200ms;
+}
+form button:hover {
+  transform: translateY(-2px);
+}
+form button:active {
+  transform: translateY(0px);
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+  transition: ease-in-out 1s;
+  animation: 1s ease-in-out;
+}
+div.success {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--success);
+  color: var(--success);
+  border-radius: 4px;
+  margin: 20px 0;
+  animation: ease-in-out;
+
+}
+
+input.error { 
+  border: 1px solid var(--error);
+}
+
+.workout-details .trash {
+  color: var(--error);
+  font-size: 1.6rem;
+  transition: font-weight 500ms;
+  
+}
+.workout-details .trash:hover {
+  font-weight: bold;
+}
+.workout-details .date-added {
+  margin-top: 6px;
+}
